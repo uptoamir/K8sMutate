@@ -1,0 +1,7 @@
+mutations:
+  - kind: Pod
+    path: "/spec/containers/0/resources/requests/cpu"
+    value: "500m"
+  - kind: Pod
+    path: "/spec/containers/1/resources/requests/cpu"
+    value: "200m"

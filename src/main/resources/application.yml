@@ -1,0 +1,7 @@
+mutations:
+  - kind: Pod
+    path: "/spec/containers/0/resources/requests/cpu"
+    value: "2"
+  - kind: Pod
+    path: "/spec/containers/0/resources/limits/memory"
+    value: "512Mi"
