@@ -23,7 +23,7 @@ K8sMutate is a flexible Kubernetes Mutating Admission Webhook built with Java an
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/k8smutate.git
+git clone https://github.com/uptoamir/K8sMutate
 cd k8smutate
 ```
 
@@ -46,7 +46,7 @@ java -jar target/k8smutate-1.0-SNAPSHOT.jar
 #### 1. Build the Docker Image
 
 ```bash
-docker build -t your-docker-repo/k8smutate:latest .
+docker build -t khoshbinamirhosein/k8smutate:latest .
 ```
 
 #### 2. Run the Docker Container
@@ -54,7 +54,7 @@ docker build -t your-docker-repo/k8smutate:latest .
 ```bash
 docker run -d -p 8080:8080 \
   -v /path/to/your/application.yml:/app/config/application.yml \
-  your-docker-repo/k8smutate:latest
+  khoshbinamirhosein/k8smutate:latest
 ```
 
 ## Kubernetes Integration
@@ -82,7 +82,7 @@ spec:
     spec:
       containers:
       - name: k8smutate
-        image: your-docker-repo/k8smutate:latest
+        image: khoshbinamirhosein/k8smutate:latest
         ports:
         - containerPort: 8080
         volumeMounts:
